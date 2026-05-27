@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Moderna | Luciano Guerra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail { padding: 150px 0 100px; }
+        .project-header { text-align: center; margin-bottom: 60px; }
+        .project-header h1 { font-size: 3.5rem; margin-bottom: 20px; }
+        .project-meta { display: flex; justify-content: center; gap: 30px; color: var(--primary-color); font-weight: 600; margin-bottom: 40px; }
+        .project-hero-img { width: 100%; height: 500px; background-size: cover; background-position: center; border-radius: 20px; margin-bottom: 60px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+        .project-info-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 60px; }
+        .project-description h2 { margin-bottom: 25px; font-size: 2rem; }
+        .project-description p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 20px; }
+        .project-sidebar { background: var(--bg-card); padding: 40px; border-radius: 20px; height: fit-content; }
+        .sidebar-item { margin-bottom: 30px; }
+        .sidebar-item h4 { color: var(--primary-color); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .sidebar-item ul { list-style: none; }
+        .sidebar-item ul li { margin-bottom: 5px; color: var(--text-main); }
+        @media (max-width: 768px) {
+            .project-info-grid { grid-template-columns: 1fr; }
+            .project-header h1 { font-size: 2.5rem; }
+            .project-hero-img { height: 300px; }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">LG<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#sobre">Sobre</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projetos">Projetos</a></li>
+                <li><a href="../index.html#servicos">Serviços</a></li>
+                <li><a href="../index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header" data-aos="fade-up">
+                <h1>Landing Page Moderna</h1>
+                <div class="project-meta">
+                    <span><i class="fas fa-tag"></i> Web Development</span>
+                    <span><i class="fas fa-calendar"></i> 2026</span>
+                </div>
+            </div>
+
+            <div class="project-hero-img" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80');" data-aos="zoom-in"></div>
+
+            <div class="project-info-grid">
+                <div class="project-description" data-aos="fade-right">
+                    <h2>Sobre o Projeto</h2>
+                    <p>Esta landing page foi desenvolvida para uma startup de tecnologia focada em soluções SaaS. O objetivo principal era converter visitantes em leads através de um design limpo e chamadas para ação estratégicas.</p>
+                    <p>Utilizei animações suaves e um layout responsivo para garantir que a experiência fosse perfeita em qualquer dispositivo.</p>
+                    <div style="margin-top: 40px;">
+                        <a href="#" class="btn btn-primary">Ver Site Ao Vivo</a>
+                    </div>
+                </div>
+                <div class="project-sidebar" data-aos="fade-left">
+                    <div class="sidebar-item">
+                        <h4>Tecnologias</h4>
+                        <ul>
+                            <li>HTML5 & CSS3</li><li>JavaScript ES6</li><li>AOS Library</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4>Cliente</h4>
+                        <p>TechStart Inc.</p>
+                    </div>
+                    <div class="sidebar-item">
+                        <h4>Serviço</h4>
+                        <p>Desenvolvimento Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Luciano Guerra. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
